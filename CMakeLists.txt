@@ -1,10 +1,6 @@
 PROJECT(LuaNode C CXX)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 
-IF(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
-    MESSAGE(FATAL_ERROR "In-source builds not allowed. Please make a new directory (called a build directory) and run CMake from there. You may need to remove CMakeCache.txt. ")
-ENDIF()
-
 FIND_PACKAGE( Lua51 REQUIRED )
 FIND_PACKAGE( OpenSSL REQUIRED )
 FIND_PACKAGE( Threads REQUIRED )
